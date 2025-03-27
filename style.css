@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #111;
+  color: #ffcccc;
+}
+header {
+  padding: 10px 0;
+}
+.main-title {
+  font-size: 2.3em;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-box, #user-form, #cart, #confirmation-message, #contact-form {
+  width: 92%;
+  max-width: 550px;
+  margin: 16px auto;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.05);
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+select, button, input, textarea {
+  padding: 8px;
+  margin: 6px 0;
+  font-size: 15px;
+  width: 94%;
+  max-width: 100%;
+  text-align: center;
+}
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+.price {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 6px 0 12px;
+}
+
+body.theme-fijo {
+  background-color: #111;
+  color: #ffcccc;
+}
+body.theme-gpower {
+  background-color: #f5f5f5;
+  color: #111;
+}

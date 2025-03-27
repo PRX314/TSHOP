@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>T-Shirt Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-fijo">
+  <header>
+    <h1 class="main-title">T-Shirt Collection</h1>
+  </header>
+
+  <main class="content">
+    <div class="product-box">
+      <label for="collection-select">Scegli la collezione:</label>
+      <select id="collection-select"></select>
+
+      <img id="product-image" src="" alt="Seleziona una variante">
+      <h2 id="product-name"></h2>
+      <p id="product-description"></p>
+      <p id="product-price" class="price"></p>
+
+      <label for="type-select">Tipo:</label>
+      <select id="type-select"></select>
+
+      <label for="color-select">Colore:</label>
+      <select id="color-select"></select>
+
+      <label for="size-select">Taglia:</label>
+      <select id="size-select"></select>
+
+      <button id="add-to-cart">Aggiungi al carrello</button>
+    </div>
+
+    <div id="cart">
+      <h2>Carrello</h2>
+      <ul id="cart-items"></ul>
+      <div id="cart-total"></div>
+      <button id="clear-cart">Svuota carrello</button>
+    </div>
+
+    <div id="user-form" class="form-section">
+      <h2>Dati per la spedizione</h2>
+      <input type="text" id="name" placeholder="Nome e Cognome" required><br>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="text" id="address" placeholder="Indirizzo (via e numero civico)" required><br>
+      <input type="text" id="cap" placeholder="CAP" required><br>
+      <input type="text" id="city" placeholder="Città" required><br>
+      <input type="text" id="province" placeholder="Provincia" required><br>
+      <input type="text" id="country" placeholder="Nazione" required><br>
+      <textarea id="notes" placeholder="Note per la consegna (facoltative)"></textarea><br>
+      <button id="send-order">Ordina ora e paga</button>
+    </div>
+
+    <div id="confirmation-message" class="form-section" style="display:none;">
+      <h2>✅ Ordine confermato!</h2>
+      <p>Ti abbiamo inviato una conferma via email. Grazie per il tuo supporto!</p>
+    </div>
+
+    <div id="contact-form" class="form-section">
+      <h2>Contattaci</h2>
+      <input type="text" id="contact-name" placeholder="Nome" required><br>
+      <input type="email" id="contact-email" placeholder="Email" required><br>
+      <textarea id="contact-message" placeholder="Il tuo messaggio..." required></textarea><br>
+      <button id="send-contact">Invia messaggio</button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="productData.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
