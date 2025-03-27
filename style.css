@@ -1,59 +1,81 @@
+/* STILE BASE PASTELLO + BORDI ARROTONDATI */
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  background-color: #111;
-  color: #ffcccc;
+  background-color: #fef9f4;
+  color: #333;
 }
+
 header {
-  padding: 10px 0;
+  padding: 20px 0;
 }
+
 .main-title {
-  font-size: 2.3em;
+  font-size: 2.5em;
+  color: #a86ca0;
+  font-weight: 700;
 }
+
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .product-box, #user-form, #cart, #confirmation-message, #contact-form {
   width: 92%;
-  max-width: 550px;
+  max-width: 600px;
   margin: 16px auto;
-  padding: 18px;
-  border-radius: 16px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.25);
-  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
+
 img {
   max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
+
 select, button, input, textarea {
-  padding: 8px;
-  margin: 6px 0;
-  font-size: 15px;
-  width: 94%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  width: 95%;
   max-width: 100%;
   text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background: #fdf6f8;
+  color: #333;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
 }
+
+button {
+  background-color: #ffd6e5;
+  color: #5b3256;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #ffc2dc;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 0 16px;
+  color: #a86ca0;
+}
+
 #cart-items {
   list-style: none;
   padding: 0;
-}
-.price {
-  font-weight: bold;
-  font-size: 1.1em;
-  margin: 6px 0 12px;
-}
-
-body.theme-fijo {
-  background-color: #111;
-  color: #ffcccc;
-}
-body.theme-gpower {
-  background-color: #f5f5f5;
-  color: #111;
 }
