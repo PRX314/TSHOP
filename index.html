@@ -3,12 +3,12 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>T-Shirt Collection</title>
+  <title>Fijo de’n amore</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="theme-fijo">
   <header>
-    <h1 class="main-title">T-Shirt Collection</h1>
+    <h1 id="main-title" class="main-title"></h1>
   </header>
 
   <main class="content">
@@ -19,7 +19,6 @@
       <img id="product-image" src="" alt="Seleziona una variante">
       <h2 id="product-name"></h2>
       <p id="product-description"></p>
-      <p id="product-price" class="price"></p>
 
       <label for="type-select">Tipo:</label>
       <select id="type-select"></select>
@@ -44,26 +43,13 @@
       <h2>Dati per la spedizione</h2>
       <input type="text" id="name" placeholder="Nome e Cognome" required><br>
       <input type="email" id="email" placeholder="Email" required><br>
-      <input type="text" id="address" placeholder="Indirizzo (via e numero civico)" required><br>
-      <input type="text" id="cap" placeholder="CAP" required><br>
-      <input type="text" id="city" placeholder="Città" required><br>
-      <input type="text" id="province" placeholder="Provincia" required><br>
-      <input type="text" id="country" placeholder="Nazione" required><br>
-      <textarea id="notes" placeholder="Note per la consegna (facoltative)"></textarea><br>
-      <button id="send-order">Ordina ora e paga</button>
+      <textarea id="address" placeholder="Indirizzo di spedizione" required></textarea><br>
+      <button id="send-order">Invia ordine e Paga</button>
     </div>
 
     <div id="confirmation-message" class="form-section" style="display:none;">
       <h2>✅ Ordine confermato!</h2>
       <p>Ti abbiamo inviato una conferma via email. Grazie per il tuo supporto!</p>
-    </div>
-
-    <div id="contact-form" class="form-section">
-      <h2>Contattaci</h2>
-      <input type="text" id="contact-name" placeholder="Nome" required><br>
-      <input type="email" id="contact-email" placeholder="Email" required><br>
-      <textarea id="contact-message" placeholder="Il tuo messaggio..." required></textarea><br>
-      <button id="send-contact">Invia messaggio</button>
     </div>
   </main>
 
