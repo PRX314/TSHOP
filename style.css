@@ -1,81 +1,151 @@
-/* STILE BASE PASTELLO + BORDI ARROTONDATI */
-
+/* ------------------ BASE ------------------ */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  background-color: #fef9f4;
-  color: #333;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 header {
-  padding: 20px 0;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .main-title {
-  font-size: 2.5em;
-  color: #a86ca0;
-  font-weight: 700;
+  font-size: 2.8em;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px 15px;
 }
 
-.product-box, #user-form, #cart, #confirmation-message, #contact-form {
-  width: 92%;
+.product-box,
+#user-form,
+#cart,
+#confirmation-message {
+  width: 90%;
   max-width: 600px;
-  margin: 16px auto;
-  padding: 20px;
-  border-radius: 24px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-  background: #ffffff;
-  transition: all 0.3s ease-in-out;
+  margin: 20px auto;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
 }
 
 img {
   max-width: 100%;
-  border-radius: 20px;
-  margin-bottom: 16px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-select, button, input, textarea {
+select,
+button,
+input,
+textarea {
   padding: 12px;
-  margin: 10px 0;
+  margin: 12px 0;
   font-size: 16px;
-  width: 95%;
+  border-radius: 8px;
+  border: none;
+  width: 90%;
   max-width: 100%;
-  text-align: center;
-  border: 2px solid #ddd;
-  border-radius: 20px;
-  background: #fdf6f8;
-  color: #333;
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s ease;
 }
 
 button {
-  background-color: #ffd6e5;
-  color: #5b3256;
+  background-color: #ff6b81;
+  color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-  background-color: #ffc2dc;
-}
-
-.price {
-  font-weight: bold;
-  font-size: 1.2em;
-  margin: 10px 0 16px;
-  color: #a86ca0;
+  background-color: #ff4757;
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
 }
 
 #cart-items {
   list-style: none;
   padding: 0;
+}
+
+/* ------------------ COLLEZIONE: FIJO ------------------ */
+.theme-fijo {
+  background-color: #1a1a1a;
+  color: #ffdddd;
+  font-family: 'Georgia', serif;
+}
+
+.theme-fijo header {
+  background: linear-gradient(90deg, #ffb6c1, #ff5e78);
+  color: #1a1a1a;
+}
+
+.theme-fijo .main-title {
+  font-family: 'Georgia', serif;
+  text-shadow: 2px 2px 8px #ff5e78;
+}
+
+.theme-fijo button {
+  background-color: #ff5e78;
+  border: none;
+}
+
+.theme-fijo button:hover {
+  background-color: #e64860;
+  box-shadow: 0 0 15px rgba(255, 92, 120, 0.6);
+}
+
+.theme-fijo .product-box,
+.theme-fijo #user-form,
+.theme-fijo #cart {
+  box-shadow: 0 0 25px rgba(255, 105, 135, 0.2);
+}
+
+/* ------------------ COLLEZIONE: G POWER ------------------ */
+.theme-gpower {
+  background-color: #0d0d0d;
+  color: #00ffd5;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.theme-gpower header {
+  background: linear-gradient(90deg, #00ffd5, #00b894);
+  color: #000;
+}
+
+.theme-gpower .main-title {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 12px #00ffd5;
+}
+
+.theme-gpower button {
+  background-color: #00b894;
+  color: #000;
+  border: 2px solid #00ffd5;
+}
+
+.theme-gpower button:hover {
+  background-color: #00ffd5;
+  color: #000;
+  box-shadow: 0 0 12px #00ffd5;
+}
+
+.theme-gpower .product-box,
+.theme-gpower #user-form,
+.theme-gpower #cart {
+  box-shadow: 0 0 20px rgba(0, 255, 213, 0.2);
+  background: rgba(0, 255, 213, 0.05);
 }
